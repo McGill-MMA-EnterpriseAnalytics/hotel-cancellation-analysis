@@ -9,3 +9,5 @@ However, much of the literature overlooks the significance of the variables used
 ## Example use case identified: Marriott International
 
 In the U.S., hotel industry is considered a $240B business as of 2023. Marriot occupies 7.5% of it. They recently have adopted a new cancellation policy. 
+
+## Cool quote:   In  the  hospitality  industry  (rooms division),   revenue   management   definition   was   adapted   to “making the right room available for the right guest and the right price  at  the  right  time  via  the  right  distribution  channel” (Mehrotra & Ruttley, 2006, p. 2)
