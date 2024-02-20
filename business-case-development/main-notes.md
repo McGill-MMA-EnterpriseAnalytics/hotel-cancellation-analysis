@@ -10,4 +10,14 @@ However, much of the literature overlooks the significance of the variables used
 
 In the U.S., hotel industry is considered a $240B business as of 2023. Marriot occupies 7.5% of it. They recently have adopted a new cancellation policy. 
 
-## Cool quote:   In  the  hospitality  industry  (rooms division),   revenue   management   definition   was   adapted   to “making the right room available for the right guest and the right price  at  the  right  time  via  the  right  distribution  channel” (Mehrotra & Ruttley, 2006, p. 2)
+## Cool quote:  
+In  the  hospitality  industry  (rooms division),   revenue   management   definition   was   adapted   to “making the right room available for the right guest and the right price  at  the  right  time  via  the  right  distribution  channel” (Mehrotra & Ruttley, 2006, p. 2)
+
+## Problem Statement: 
+
+Dilemma faced by the hotels: 
+
+Both overbooking  and  cancellation  policies  can  be prejudicial  to  the  hotel.  Overbooking,   by   not   allowing   the customer to check in at the hotel he or she previously booked, forces the hotel to deny service provision to the customer, which can  be  a  terrible  experience  for  the  customer.  This  experience can  have  a  negative  effect  on  both  the  hotel’s reputation and immediate  revenue  (Noone  &  Lee,  2011),  not  to  mention  the potential loss of future revenue from discontent customers who will  not  book  again  to  stay  at  the  hotel  (Mehrotra  &  Ruttley, 2006).  Cancellation  policies,  especially  non-refundable  policies, have the potential not to only reduce the number of bookings, but to also to diminish revenue due to their significant discounts on price (Smith et al., 2015)
+
+To overcome the negative impact caused by overbooking and the implementation   of   rigid   cancellation   policies   to   cope   with booking cancellations, that can represent up to 20% of the total bookings  received  by  hotels  (Morales  &  Wang,  2010)  or  up  to 60% in airport/roadside hotels (Liu, 2004), it is proposed by the authors  the  use  of  a  technological  framework  grounded  in  a booking cancellation prediction model, developed in the scope of data  science.  This  model,  by  predicting  the  probability  of  each booking to be canceled, could help produce better forecasts and reduce   uncertainty in   management   decisions.   This   is   very important in the context of **revenue management, for inventory allocation  and  pricing  decisions** (**Key Value Drivers**)  (Mehrotra  &  Ruttley,  2006; Talluri   &   Van   Ryzin,   2004),   but   also   important   in   other management   contexts   like   staffing,   supplies   purchases   or profitability/cash  flow  decisions  (Hayes  &  Miller,  2011).  At  the same time, by developing a classification prediction model, i.e., a model that classifies each booking likelihood of being canceled, enable hotels to act upon those specific bookings to try to avoid their cancellation, or in some cases, force it.
+
