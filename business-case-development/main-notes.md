@@ -1,23 +1,79 @@
-One major issue plaguing the hospitality sector is the high **rate of booking cancellations.** These are often due to unexpected circumstances such as health issues, accidents, adverse weather, conflicts in schedules, or unforeseen duties (Falk and Vieru, 2018). Interestingly, a significant portion of these cancellations comes from customers who **continue to search for better deals after booking,** (also know as go and search), sometimes holding multiple reservations to choose the most favorable option (Antonio et al., 2017).
+# Problem Statement
 
-In response, the hospitality industry has adapted by modifying hotel cancellation policies, which are vital for managing various business outcomes, including **optimizing revenue and profit.** **(Key value drivers)** Prior to the pandemic, there was a notable trend towards stricter cancellation policies, such as reducing the period during which cancellations are free or increasing the fees for cancellations (Riasi et al., 2019; Smith et al., 2015).
+The hospitality industry frequently grapples with the twin challenges of overbooking and stringent cancellation policies, which, while designed to mitigate losses from cancellations, can inadvertently tarnish a hotel's reputation and diminish future revenue streams. In addressing the delicate balance of **maximizing occupancy** and **maintaining customer goodwill**, the implementation of a data-driven predictive model and a causal model with CATE emerge as pivotal solutions. This approach leverages predictive and causal inference models, offering a sophisticated method to evaluate the specific impact of management strategies on cancellation rates.
 
-Additionally, the application of machine learning to predict and mitigate potential cancellations is becoming increasingly prominent. A variety of systems, utilizing booking data and employing algorithms from support vector machines and artificial neural networks to tree-based models, support hotel management (Andriawan et al., 2020; Sánchez-Medina and C-Sánchez, 2020). Although many of these initiatives are theoretical, some practical applications have shown a reduction in cancellations by as much as 37 percentage points (Antonio et al., 2019a).
+# Example ROI Estimation based on Causal Inference
 
-However, much of the literature overlooks the significance of the variables used in these models and fails to explain the rationale behind the predictions. Exploring these models thoroughly is crucial in developing effective hotel management support systems. It's important for the development process to include **business validation and ethical assessment,** especially since **stringent cancellation policies or overbooking strategies** can adversely affect a hotel's reputation and financial success. 
+## ROI Estimation for First-Time Guests Deposit Requirement
 
-## Example use case identified: Marriott International
+To estimate the ROI for implementing a deposit requirement for first-time guests, we will follow these steps:
 
-In the U.S., hotel industry is considered a $240B business as of 2023. Marriot occupies 7.5% of it. They recently have adopted a new cancellation policy. 
+1. **Determine the Average Revenue Per Booking (ARB)**: 
+   This is the average revenue generated from each non-cancelled booking by a first-time guest. 
+   - Let's assume an ARB of `$200`. (Source: )
 
-## Cool quote:  
-In  the  hospitality  industry  (rooms division),   revenue   management   definition   was   adapted   to “making the right room available for the right guest and the right price  at  the  right  time  via  the  right  distribution  channel” (Mehrotra & Ruttley, 2006, p. 2)
+2. **Estimate the Increase in Non-Cancellation Rates (INCR)**: 
+   The CATE estimate suggests a reduction in cancellations by requiring a deposit.
+   - Given CATE estimate of `-0.56`, the INCR is `56%`. (From CATE calculation)
 
-## Problem Statement: 
+3. **Calculate the Average Deposit Amount (ADA)**: 
+   This is the average deposit required from first-time guests.
+   - We will use an ADA of `$50`. (Source: )
 
-Dilemma faced by the hotels: 
+4. **Estimate the Number of First-Time Bookings (NFB)**: 
+   The total number of bookings by first-time guests in a given period.
+   - Suppose we have `1000` NFB. (Arbitrary number)
 
-Both overbooking  and  cancellation  policies  can  be prejudicial  to  the  hotel.  Overbooking,   by   not   allowing   the customer to check in at the hotel he or she previously booked, forces the hotel to deny service provision to the customer, which can  be  a  terrible  experience  for  the  customer.  This  experience can  have  a  negative  effect  on  both  the  hotel’s reputation and immediate  revenue  (Noone  &  Lee,  2011),  not  to  mention  the potential loss of future revenue from discontent customers who will  not  book  again  to  stay  at  the  hotel  (Mehrotra  &  Ruttley, 2006).  Cancellation  policies,  especially  non-refundable  policies, have the potential not to only reduce the number of bookings, but to also to diminish revenue due to their significant discounts on price (Smith et al., 2015)
+5. **Calculate the Increased Revenue from Reduced Cancellations (IRRC)**:
 
-To overcome the negative impact caused by overbooking and the implementation   of   rigid   cancellation   policies   to   cope   with booking cancellations, that can represent up to 20% of the total bookings  received  by  hotels  (Morales  &  Wang,  2010)  or  up  to 60% in airport/roadside hotels (Liu, 2004), it is proposed by the authors  the  use  of  a  technological  framework  grounded  in  a booking cancellation prediction model, developed in the scope of data  science.  This  model,  by  predicting  the  probability  of  each booking to be canceled, could help produce better forecasts and reduce   uncertainty in   management   decisions.   This   is   very important in the context of **revenue management, for inventory allocation  and  pricing  decisions** (**Key Value Drivers**)  (Mehrotra  &  Ruttley,  2006; Talluri   &   Van   Ryzin,   2004),   but   also   important   in   other management   contexts   like   staffing,   supplies   purchases   or profitability/cash  flow  decisions  (Hayes  &  Miller,  2011).  At  the same time, by developing a classification prediction model, i.e., a model that classifies each booking likelihood of being canceled, enable hotels to act upon those specific bookings to try to avoid their cancellation, or in some cases, force it.
+   \[
+   IRRC = ARB \times INCR \times NFB
+   \]
+
+   Plugging in our values:
+
+   \[
+   IRRC = $200 \times 0.56 \times 1000 = $112,000
+   \]
+
+6. **Calculate the Total Deposit Amount Collected (TDAC)**:
+
+   \[
+   TDAC = ADA \times NFB
+   \]
+
+   Again, using our values:
+
+   \[
+   TDAC = $50 \times 1000 = $50,000
+   \]
+
+7. **Estimate Costs Associated with Deposits (CAD)**:
+   Additional costs due to the deposit policy. Assuming it's `10%` of the ADA: (Source: )
+
+   \[
+   CAD = 0.10 \times TDAC = 0.10 \times $50,000 = $5,000
+   \]
+
+8. **Calculate Net Gain from Deposits (NGD)**:
+
+   \[
+   NGD = TDAC - CAD = $50,000 - $5,000 = $45,000
+   \]
+
+9. **Estimate ROI**:
+
+   \[
+   ROI = \frac{IRRC + NGD}{CAD}
+   \]
+
+   With our values:
+
+   \[
+   ROI = \frac{$112,000 + $45,000}{$5,000} = \frac{$157,000}{$5,000} = 31.4
+   \]
+
+The ROI of `31.4` indicates that for every dollar spent on managing the deposit process, the hotel earns back `$31.40` in increased revenue and net gains from deposits. This calculation is an estimate based on assumptions provided by references and should be refined with more detailed data for precise planning.
+
+# References: 
 
