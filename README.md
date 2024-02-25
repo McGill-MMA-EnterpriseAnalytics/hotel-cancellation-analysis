@@ -147,9 +147,10 @@ In conclusion, the judicious application of predictive modeling and causal infer
 ---
 ## How to Run this Project
 
-- Final_Project_Notebook.ipynb contains every code included for the preprocessing, EDA, predictive, and causal analyses.
+- Final_Project_Notebook.ipynb contains every code written for the preprocessing, EDA, predictive, and causal analyses.
 - Financial_Analysis__ROI_Estimation.pdf includes financial implications and ROI estimation derived from causal analysis.
 - Presentation.pdf contains presentation slides for this project.
+- hotel_booking.csv is the dataset used for this project.
 ---
 
 ## Contributing
