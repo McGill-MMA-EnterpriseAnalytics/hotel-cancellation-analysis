@@ -1,6 +1,13 @@
 # Hotel Booking Cancellation Analysis
 End-to-end project using Predictive and Causal analysis for Hotel Booking Cancellation
 
+#### Group Members: 
+- Oyundari Batbayar
+- Jaya Chaturvedi
+- Vinay Govias
+- Kaz Hayashi
+- Reo Paul Jackson
+
 ## Problem Statement
 
 In the fast-paced hospitality industry, effectively managing hotel cancellations is crucial for maintaining revenue and enhancing guest experiences. Industry leaders emphasize a multifaceted strategy that includes optimizing revenue through strategic overbooking, building customer loyalty with effective communication, and implementing flexible cancellation policies. Integrating these practices with machine learning tools allows hotels to reduce the financial impact of cancellations and gain a competitive edge by meeting customer needs and ensuring high satisfaction levels.
@@ -127,7 +134,11 @@ In hospitality management, establishing a robust framework for strategic decisio
 - For every dollar spent on managing the deposit process, the hotel gets a return of $31.40 in increased revenue and net gains from deposits.
 - The direct application of CATE to estimate reduction in cancellations is considered simplified. Therefore, there is a caution to reconsider the deposit policy as it could potentially reduce the overall number of successful bookings.
 
-## Next Steps
+## Conclusion and Next Steps
+
+In conclusion, the judicious application of predictive modeling and causal inference techniques, particularly CATE, provides a robust framework for decision-makers in the hospitality industry. Our successful illustration of this approach underscores the profound potential for such data-driven strategies to enhance profitability and operational efficiency. Future endeavors may build upon this foundation, incorporating more granular data to refine and personalize deposit strategies, thus further fortifying the financial resilience of hotels against the perennial challenge of booking cancellations.
+
+### Next Steps
 
 - **Model Deployment**: Create a user interface for the hotel management team to easily access and interpret model predictions.
 - **Additional Research**: Validating the impact of requiring a deposit on successful reservation rates requires further research since the dataset only includes data for completed reservations.
