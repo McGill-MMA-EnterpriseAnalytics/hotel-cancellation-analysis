@@ -18,7 +18,7 @@ In our project, we aim to tackle the issue of handling booking cancellations in 
 
 ## Overview of Dataset
 
-Our dataset, sourced from Kaggle, comprises 36 columns with a mix of 20 numeric and 16 categorical variables. These columns fall into five main categories: customer details, hotel information, amenities offered, booking specifics, and the target variable of cancellation status. 
+Our dataset, sourced from Kaggle (https://www.kaggle.com/datasets/arezaei81/hotel-bookingcvs), comprises 36 columns with a mix of 20 numeric and 16 categorical variables. These columns fall into five main categories: customer details, hotel information, amenities offered, booking specifics, and the target variable of cancellation status. 
 
 ## Data Preparation
 
